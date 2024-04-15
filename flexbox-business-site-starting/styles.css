@@ -1,0 +1,315 @@
+/* Universal */
+
+html{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3.125rem;
+}
+
+p, a, span{
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.250rem;
+    line-height: 1.2;
+    color: #160042;
+    margin: 0;
+}
+
+h3{
+    color: #6b7094;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+/* Header */
+
+
+/* Navbar */
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    height: 5rem;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    
+}
+
+.nav-logo{
+    justify-content: flex-start;
+    flex: 1;  
+}
+
+.nav-content{
+    width: 100%;
+    flex: 2;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+nav ul{
+    display: inline-flex;
+    float: right;
+    flex-flow: row wrap;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0rem 1.125rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-button{
+    padding: 1rem 2rem;
+    border-radius: 3.125rem;
+    background-color: #160042;
+    color: white;
+}
+
+.burgermenu{
+    display: none;
+}
+
+.burgermenu img{
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Hero Section */
+
+.hero{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    gap: 3.125rem;
+    padding: 3.125rem 0rem;
+    
+}
+
+.left{
+    flex: 1 auto;
+    height: 100%;
+    padding: 3.125rem 0rem;
+    width: 48%;
+}
+
+
+.get-started{
+    padding: 1.125rem 2.1rem;
+    background-color: #160042;
+    color: white;
+    margin-top: 0px;
+    border-radius: 3.125rem;
+    
+}
+
+.right{
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+}
+
+.right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.125rem;
+}
+
+
+/* About Us Section */
+
+.about{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    gap: .5rem;
+    padding: 50px 0px;
+}
+
+.title-content{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3.125rem;
+}
+
+.left-content{
+    justify-content: center;
+    align-items: center;
+    flex: 1 48%;
+    text-align: center;
+}
+
+.left-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3.125rem;
+}
+
+.right-content{
+    display: flex;
+    flex: 1 48%;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-between
+}
+
+.main-content{
+    justify-content: space-around;
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row wrap;
+    gap: 1.250rems;
+}
+
+.box{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 28%;
+    text-align: center;
+    padding: 1.250rem;
+    height: 21.875rem
+}
+
+.box img{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.box h3{
+    color: #6b7094;
+    line-height: 1.5rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+/* Services Section */
+
+.services{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3.125rem;
+    padding-bottom: 6.25rem;
+}
+
+.box-title-services{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-title-services h1{
+    font-weight: 800;
+    font-size: 3.375rem;
+    line-height: 1.2;
+    color: #160042;
+    margin: 0;
+}
+
+.services-boxes{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 30%;
+    gap: 3.125rem;
+}
+
+.box-services{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 28%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-services img{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+/* Contact Us */
+
+.contact-us{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3.125rem 0;
+    flex: 1 100%;
+    text-align: center;
+}
+
+.contact-us span{
+    font-weight: 500;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.250rem 0;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .nav-content{
+        display: none;
+    }
+
+    .burgermenu{
+        display: inline-flex;
+    }
+
+    .hero{
+        text-align: center;
+    }
+
+    .about{
+        text-align: center;
+    }
+
+    .title-content{
+        flex-flow: column-reverse wrap;
+    }
+
+    .main-content{
+        flex-flow: column wrap;
+    }
+
+    .services-boxes{
+        flex-flow: column wrap;
+    }
+}
